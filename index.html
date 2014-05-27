@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html manifest="offline.appcache"> 
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>What is my Sentence</title>
+        <meta name="description" content="Online tool to help calculate multiple bill La. R.S. 15:529.1 enhanced sentences,
+        Habitual Offender Law">
+        <meta name="viewport" content="width=device-width">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/readable.bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 9]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="navbar navbar-inverse ">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand hidden-phone" href="index.html">What is my Sentence?</a>
+                    
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li><a href="about.html">About</a></li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="well hidden-phone">
+                <h4>
+                    Answer these questions to determine your client's possible sentencing range:
+                </h4>
+            </div>
+            <div class="well">
+                <fieldset>
+                    <label><span class="label label-inverse">1</span> My Client is currently charged with:</label>
+                    <input type="text" id="selectr" data-link="data.json" class="ajax-typeahead input-xxlarge" data-provide="typeahead" autocomplete="off" placeholder="Name or Statute Number of Offense">
+                    <input type="hidden" name="billStatus">
+                    </label>
+            </script>
+        </div> <!-- /container -->
+        <div class="navbar navbar-fixed-bottom hidden-phone">
+            <div class="container">
+                <p class="pull-right muted"><small>Project by John Love Norris, IV</small></p>
+            </div>
+        </div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/vendor/handlebars.js"></script>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-39639619-1', 'loyolalawtech.org');
+            ga('send', 'pageview');
+        </script>
+        
+    <button type="submit" class="btn btn-default">What is My Time?</button>
+    </form>
+    <div id="result"></div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+    </body>
+</html>
